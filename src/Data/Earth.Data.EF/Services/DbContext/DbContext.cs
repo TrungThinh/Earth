@@ -6,7 +6,7 @@ using System.Linq;
 using Earth.Data.EF.Utils.DataReaderUtils;
 using Microsoft.EntityFrameworkCore;
 
-namespace Earth.Data.EF.Services
+namespace Earth.Data.EF.Services.DbContext
 {
     public abstract class DbContext: Microsoft.EntityFrameworkCore.DbContext, Earth.Data.EF.Interfaces.DbContext.IDbContext
     {
