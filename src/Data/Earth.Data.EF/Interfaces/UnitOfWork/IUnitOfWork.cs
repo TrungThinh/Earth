@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
@@ -61,7 +60,7 @@ namespace Earth.Data.EF.Interfaces.UnitOfWork
 
         void ExecuteCommand(string text, CommandType type, params SqlParameter[] parameters);
 
-        List<T> ExecuteCommand<T>(string text, CommandType type, params SqlParameter[] parameters)
+        List<T> ExecuteQuery<T>(string text, CommandType type, params SqlParameter[] parameters)
             where T : class, new();
 
         #endregion
